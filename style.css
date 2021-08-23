@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+body{
+    background-image: url(./images/backgroundimage.png);
+    background-color: #232323; 
+    font-family: 'Roboto Mono' , sans-serif;
+    margin: 0;
+}
+
+/* AQUI E PARA O HEADER */
+.header{
+    text-align: left;
+}
+
+/* AQUI E PARA O FOOTER */
+.footer{
+    color: white;
+    bottom: 0;
+    font-weight: bold;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* AQUI SÃO AS CLASSES DE PERFIL */
+.body-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-perfil{
+    background-color: #00000080;
+    color: white;
+    padding: 20px 20px;
+    width:  80%;
+    height: 600px;
+}
+
+
+.image-text-perfil{
+    display: block;
+    text-align: center;
+}
+
+.image-body{
+    /* width: 20%; */
+    display: inline-block;
+    width: 20%;
+}
+
+.image-perfil{
+    width: 80%;
+    border-radius: 100%;
+    font-weight: bold;
+    text-align: center;
+    margin: -10% 27px;
+}
+
+
+.descricao-perfil{
+    padding: 5px 5px;
+    border: 1px solid white;
+    display: inline-block;
+    text-align: left;
+    width: 70%;
+
+}
+
+.descricao-perfil li{
+    padding: 1px;
+}
+
+.descricao-perfil li:hover{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+
+
+/* SLIDER EM CSS */
+.slider{
+    padding: 50px;
+    text-align: center;
+}
+
+.slide-body-um{
+    padding: 10px ;
+}
+
+.slide-body-dois{
+    padding: 10px;
+}
+
+.slide-um{
+    display: inline-block;
+}
+
+.slide-um:hover{
+    border: 1px solid white;
+
+}
+
+.slide-dois{
+    display: inline-block;
+}
+
+.slide-dois:hover{
+    border: 1px solid white;
+}
+
+#slide1:checked ~ .slide-body-dois{
+    display: none;
+ }
+
+ #slide2:checked ~ .slide-body-um{
+     display: none;
+ }
+
+
+/* BUTTONS SOCIAL */
+.buttons-social{
+    text-align: center;
+}
+
+ /* MODO CELULAR */
+@media (max-width: 1300px){
+    .footer-text{
+        display: none;
+    }
+
+    .background-perfil{
+        background-color: #00000080;
+        color: white;
+        padding: 20px 20px;
+        width:  100%;
+        height: 1350px;
+    }
+
+    .header{
+        text-align: center;
+    }
+
+    .image-body{
+        text-align: center;
+        width: 100%;
+    }
+
+    .image-perfil{
+
+        width: 50%;
+        border-radius: 100%;
+        font-weight: bold;
+        margin: 0px 0px;
+    }
+
+    .descricao-perfil{
+        padding: 0;
+        border: 1px solid white;
+        float: none;
+        width: 100%;
+    }
+}
